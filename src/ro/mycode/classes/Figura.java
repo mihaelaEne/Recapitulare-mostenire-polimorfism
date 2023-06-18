@@ -5,6 +5,13 @@ public  class Figura {
         System.out.println(this);
     }
 
+    public void translatare(Punct p){
+        System.out.println(this);
+    }
+
+    public Figura duplicare(){
+        return null;
+    }
     @Override
     public String toString() {
         return "Figura{}";

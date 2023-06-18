@@ -37,8 +37,8 @@ public class Dreptunghi extends Figura {
     public String toString() {
         String text = "";
         text += "Eu sunt un dreptunghi cu urmatoarele caracteristici:" + "\n";
-        text += "punct nr1: " + this.p1 + "\n";
-        text += "punct nr2: " + this.p2 + "\n";
+        text += "punct nr1: " + this.p1.getX()+ "\n";
+        text += "punct nr2: " + this.p2.getY()+ "\n";
         return text;
     }
 
@@ -49,6 +49,18 @@ public class Dreptunghi extends Figura {
         Dreptunghi that = (Dreptunghi) o;
         return Objects.equals(p1, that.p1) && Objects.equals(p2, that.p2);
     }
+
+    @Override
+    public void translatare(Punct p){
+       p1.translatare(p);
+       p2.translatare(p);
+    }
+
+    @Override
+    public Figura duplicare(){
+        return new Dreptunghi(new Punct(this.p1.getX(),this.p2.getY()),new Punct(this.p2.getX(),this.p1.getY()));
+    }
+
 
 
 }

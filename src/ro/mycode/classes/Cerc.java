@@ -39,7 +39,7 @@ public class Cerc extends Figura{
     public String toString() {
         String text="";
         text+="Eu sunt un cerc cu urmatoarele proprietati:"+"\n";
-        text+="punct centru: "+this.centru +"\n";
+        text+="punct centru: "+this.centru.getX()+"\n";
         text+="raza: "+this.raza+"\n";
         return text;
     }
@@ -52,5 +52,15 @@ public class Cerc extends Figura{
         return raza == cerc.raza && Objects.equals(centru, cerc.centru);
     }
 
+    @Override
+    public void translatare(Punct p){
+       centru.translatare(p);
+    }
+
+
+    @Override
+    public Figura duplicare(){
+        return new Cerc(new Punct(this.centru.getX(),this.centru.getY()), raza);
+    }
 
 }
