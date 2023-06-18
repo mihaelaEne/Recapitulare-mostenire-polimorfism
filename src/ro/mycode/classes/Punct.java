@@ -51,5 +51,15 @@ public class Punct extends Figura {
         return x == punct.x && y == punct.y;
     }
 
+    @Override
+    public void translatare(Punct p){
+        x+=p.getX();
+        y+=p.getY();
+    }
+
+    @Override
+    public Figura duplicare(){
+        return new Punct(this.x,this.y);
+    }
 
 }

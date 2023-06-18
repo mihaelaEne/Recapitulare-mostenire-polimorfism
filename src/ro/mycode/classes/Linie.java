@@ -1,5 +1,6 @@
 package ro.mycode.classes;
 
+import java.awt.*;
 import java.util.Objects;
 
 public class Linie extends Figura {
@@ -36,7 +37,7 @@ public class Linie extends Figura {
         String text="";
         text+="Eu sunt o linie cu urmatoarele caracteristici:"+"\n";
         text+="punct de start: "+this.p1.getX()+"\n";
-        text+="pct de stop: "+this.p2+"\n";
+        text+="pct de stop: "+this.p2.getY()+"\n";
         return text;
 
     }
@@ -54,6 +55,13 @@ public class Linie extends Figura {
         Linie linie = (Linie) o;
         return p1.equals(linie.p1) && p2.equals(linie.p2);
     }
-
-
+    @Override
+    public void translatare(Punct p){
+        p1.translatare(p);
+        p2.translatare(p);
+    }
+    @Override
+    public Figura duplicare(){
+        return new Linie(new Punct(this.p1.getX(),this.p2.getY()),new Punct(this.p2.getX(),this.p1.getY()));
+    }
 }
