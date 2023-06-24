@@ -36,8 +36,8 @@ public class Linie extends Figura {
     public String toString() {
         String text="";
         text+="Eu sunt o linie cu urmatoarele caracteristici:"+"\n";
-        text+="punct de start: "+this.p1.getX()+"\n";
-        text+="pct de stop: "+this.p2.getY()+"\n";
+        text+="coordonatele aferente lui X sunt: "+this.p1.getX()+" si "+this.p1.getY()+"\n";
+        text+="coordonatele aferente lui Y sunt : "+this.p2.getX()+" si "+this.p1.getY()+"\n";
         return text;
 
     }

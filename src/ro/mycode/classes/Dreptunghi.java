@@ -37,8 +37,8 @@ public class Dreptunghi extends Figura {
     public String toString() {
         String text = "";
         text += "Eu sunt un dreptunghi cu urmatoarele caracteristici:" + "\n";
-        text += "punct nr1: " + this.p1.getX()+ "\n";
-        text += "punct nr2: " + this.p2.getY()+ "\n";
+        text += "Dreapta verticala are coordonatele: " + this.p1.getX()+" si "+this.p1.getY()+ "\n";
+        text += "Dreapta orizonatala are coordonatele: " + this.p2.getX()+ " si "+this.p2.getY()+"\n";
         return text;
     }
 

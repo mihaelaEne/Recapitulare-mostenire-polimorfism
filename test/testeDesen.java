@@ -1,5 +1,6 @@
 import org.junit.Test;
 import ro.mycode.classes.*;
+import ro.mycode.controller.Desen;
 
 import java.util.ArrayList;
 
@@ -68,6 +69,22 @@ public class testeDesen {
            figura.afiseaza();
        }
 
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("TESTARE DESEN");
+
+//       Desen desen=new Desen();
+//       desen.addFidura(c1);
+//       desen.addFidura(d1);
+//       desen.afiseaza();
+//
+//
+//        System.out.println("---------------------------------------------------------------");
+//        System.out.println("TRANSLATARE SI DUPLICARE");
+//
+//        Figura duplicare=desen.duplicare();
+//        duplicare.afiseaza();
+//        System.out.println("//////////////");
+//        duplicare.afiseaza();
     }
 
 
