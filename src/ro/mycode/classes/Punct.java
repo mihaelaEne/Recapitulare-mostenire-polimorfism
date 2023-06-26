@@ -1,8 +1,9 @@
 package ro.mycode.classes;
 
+
 import java.util.Objects;
 
-public class Punct extends Figura {
+public  class Punct extends Figura {
     private int x;
     private int y;
 

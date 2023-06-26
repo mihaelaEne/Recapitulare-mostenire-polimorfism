@@ -2,7 +2,7 @@ package ro.mycode.classes;
 
 import java.util.Objects;
 
-public class Eticheta extends Dreptunghi{
+public class Eticheta extends Dreptunghi {
 
     private String text;
 

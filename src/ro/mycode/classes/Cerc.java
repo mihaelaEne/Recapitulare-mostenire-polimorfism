@@ -1,8 +1,10 @@
 package ro.mycode.classes;
 
+
+
 import java.util.Objects;
 
-public class Cerc extends Figura{
+public class Cerc extends Figura {
 
     private Punct centru;
     private int raza;

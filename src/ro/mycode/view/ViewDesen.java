@@ -1,6 +1,5 @@
 package ro.mycode.view;
 
-import ro.mycode.classes.Figura;
 import ro.mycode.classes.Punct;
 import ro.mycode.controller.Desen;
 

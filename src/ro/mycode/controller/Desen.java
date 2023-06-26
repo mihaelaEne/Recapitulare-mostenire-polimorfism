@@ -39,7 +39,24 @@ public class Desen extends Figura {
         for(Figura figura:desene){
             figura.duplicare();
         }
-        return new Figura();
+        return new Figura() {
+            @Override
+            public void afiseaza() {
+                for (Figura figura : desene) {
+
+                    System.out.println(figura.toString());
+                }
+            }
+
+            @Override
+            public void translatare(Punct p) {
+                for(Figura figura:desene){
+                    figura.translatare(p);
+                }
+            }
+        };
     }
+
+
 
 }
