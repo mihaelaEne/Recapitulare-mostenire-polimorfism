@@ -1,5 +1,7 @@
 package ro.mycode.classes;
 
+
+
 import java.util.Objects;
 
 public class Dreptunghi extends Figura {

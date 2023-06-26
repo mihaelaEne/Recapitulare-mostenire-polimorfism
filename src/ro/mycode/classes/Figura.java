@@ -1,13 +1,10 @@
 package ro.mycode.classes;
 
-public  class Figura {
-    public void afiseaza() {
-        System.out.println(this);
-    }
+public abstract class Figura {
+    public abstract void afiseaza() ;
 
-    public void translatare(Punct p){
-        System.out.println(this);
-    }
+    public abstract void translatare(Punct p);
+
 
     public Figura duplicare(){
         return null;
@@ -16,7 +13,5 @@ public  class Figura {
     public String toString() {
         return "Figura{}";
     }
-
-
 
 }
