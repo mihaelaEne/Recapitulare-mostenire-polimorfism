@@ -2,6 +2,7 @@ package ro.mycode.main;
 
 import ro.mycode.classes.*;
 import ro.mycode.controller.Desen;
+import ro.mycode.interfaces.Figura;
 import ro.mycode.view.ViewDesen;
 
 import java.util.ArrayList;

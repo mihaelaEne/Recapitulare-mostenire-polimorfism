@@ -2,9 +2,11 @@ package ro.mycode.classes;
 
 
 
+import ro.mycode.interfaces.Figura;
+
 import java.util.Objects;
 
-public class Cerc extends Figura {
+public class Cerc implements Figura {
 
     private Punct centru;
     private int raza;

@@ -1,5 +1,7 @@
 package ro.mycode.classes;
 
+import ro.mycode.interfaces.Figura;
+
 import java.util.Objects;
 
 public class Eticheta extends Dreptunghi {
