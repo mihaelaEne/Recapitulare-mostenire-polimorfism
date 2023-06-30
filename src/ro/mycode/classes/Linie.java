@@ -2,10 +2,9 @@ package ro.mycode.classes;
 
 
 
-import java.awt.*;
-import java.util.Objects;
+import ro.mycode.interfaces.Figura;
 
-public class Linie extends Figura {
+public class Linie implements Figura {
 
     private Punct p1;
     private Punct p2;

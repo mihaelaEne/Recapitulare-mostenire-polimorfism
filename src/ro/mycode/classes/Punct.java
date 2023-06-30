@@ -1,9 +1,9 @@
 package ro.mycode.classes;
 
 
-import java.util.Objects;
+import ro.mycode.interfaces.Figura;
 
-public  class Punct extends Figura {
+public  class Punct implements Figura {
     private int x;
     private int y;
 

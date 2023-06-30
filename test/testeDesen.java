@@ -1,6 +1,6 @@
 import org.junit.Test;
 import ro.mycode.classes.*;
-import ro.mycode.controller.Desen;
+import ro.mycode.interfaces.Figura;
 
 import java.util.ArrayList;
 

@@ -1,11 +1,11 @@
 package ro.mycode.controller;
 
-import ro.mycode.classes.Figura;
+import ro.mycode.interfaces.Figura;
 import ro.mycode.classes.Punct;
 
 import java.util.ArrayList;
 
-public class Desen extends Figura {
+public class Desen implements Figura {
 
     private ArrayList<Figura> desene;
 
@@ -53,6 +53,11 @@ public class Desen extends Figura {
                 for(Figura figura:desene){
                     figura.translatare(p);
                 }
+            }
+
+            @Override
+            public Figura duplicare() {
+                return null;
             }
         };
     }

@@ -2,9 +2,11 @@ package ro.mycode.classes;
 
 
 
+import ro.mycode.interfaces.Figura;
+
 import java.util.Objects;
 
-public class Dreptunghi extends Figura {
+public class Dreptunghi implements Figura {
     private Punct p1;
     private Punct p2;
 
